@@ -1,0 +1,76 @@
+/*! == TYPOGRAPHY == */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url("https://use.typekit.net/jgj0bzl.css");
+
+h1, h2, h3, h4, h5, h6 { 
+	color: $sl-text-color;
+	font-family: $heading-font;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h2 {
+		font-family: 'lato';
+	    text-transform: uppercase;
+	    color: rgba(255, 255, 255, 0.75);
+	    font-weight: 400;
+	    position: relative;	    
+} 
+
+h3 {
+    color: #ffab00;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+	
+p { 
+	color: $sl-text-color;
+	font-family: $body-font;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+a { 
+	color: $sl-theme-secondary;
+}
+
+a, 
+a:hover {
+	text-decoration: none;
+	transition: color .3s ease;
+}
+
+a:hover {
+	color: #ffd683;
+}
+
+a:focus {
+	outline:none;
+}
+
+body {
+	font-family: $body-font;
+}
+
+.add-dropcap p:first-child:first-letter {
+    color: rgb(255, 171, 0);
+    float: left;
+    font-size: 150px;
+    line-height: 125px;
+    padding-top: 9px;
+    padding-right: 10px;
+    padding-left: 0px;
+    margin-left: -30px;
+    text-align: left;
+    font-weight: 100;
+    margin-top: -50px;
+}

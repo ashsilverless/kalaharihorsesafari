@@ -1,0 +1,24 @@
+/*! == VARIABLES == */
+
+$sl-theme-primary: #647e8c; //Blue
+$sl-theme-secondary: #ffab00; //Yellow
+$sl-theme-tertiary: #c58502; // Alt Yellow
+$sl-theme-dark: #282a2b;
+$sl-theme-dark-lighter: #3e4042;
+$sl-theme-dark-darker: #212223;
+$sl-text-color: #212223;
+
+$heading-font: 'Lato', sans-serif;
+$body-font: 'Lato', sans-serif;
+
+.fifty-height {
+	@include fifty-height;
+}
+
+.seventy-five-height {
+	@include seventy-five-height;
+}
+
+.full-height {
+	@include full-height;
+}

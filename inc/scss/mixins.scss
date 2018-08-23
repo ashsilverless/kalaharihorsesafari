@@ -1,0 +1,112 @@
+/*! == MIXINS == */
+
+
+
+//clearfix
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+
+@mixin position($type,
+	$top: $position-default,
+	$right: $position-default,
+	$bottom: $position-default,
+	$left: $position-default) {
+	position: $type;
+	$allowed_types: absolute relative fixed;
+	@if not index($allowed_types, $type) {
+		@warn "Unknown position: #{$type}.";
+	}
+	@each $data in top $top, right $right, bottom $bottom, left $left {
+		#{nth($data, 1)}: nth($data, 2);
+	}
+}
+@mixin absolute($top: $position-default, $right: $position-default, $bottom: $position-default, $left: $position-default) {
+	@include position(absolute, $top, $right, $bottom, $left);
+}
+@mixin relative($top: $position-default, $right: $position-default, $bottom: $position-default, $left: $position-default) {
+	@include position(relative, $top, $right, $bottom, $left);
+}
+@mixin fixed($top: $position-default, $right: $position-default, $bottom: $position-default, $left: $position-default) {
+	@include position(fixed, $top, $right, $bottom, $left);
+}
+
+@mixin background-cover {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat; 
+}
+
+@mixin fifty-height {
+	min-height: 50vh;
+	height:50vh;
+	overflow:hidden;
+}
+
+@mixin seventy-five-height {
+	min-height: 75vh;
+	height:75vh;
+	overflow:hidden;
+}
+
+@mixin full-height {
+	min-height: 100vh;
+	height:100vh;
+	overflow:hidden;
+}
+
+@mixin overlay-element {
+	position: absolute;
+	top:0;
+	height: 100%;
+	width:100%;
+}
+
+@mixin flex-vert-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;	
+}
+
+@mixin toggle-button {
+	color: $sl-theme-secondary;
+	font-family: $body-font;
+}
+
+@mixin standard-button {
+	padding: 10px 30px;
+	color: white;	
+    background: linear-gradient(to top, $sl-theme-primary 50%, $sl-theme-secondary 50%);
+    background-size: 100% 200%;
+    background-position:left bottom;
+    transition:all .3s ease;
+    
+    &:hover {
+	    background-position:left top;
+	    color: $sl-theme-dark;
+    }	
+}
+
+
+
+
+
+
+@mixin black-grad {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,0+100 */
+	background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */	
+}
+
+

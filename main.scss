@@ -1,0 +1,16 @@
+/* === Global SASS File === //
+
+Handles import of all Sass and partials, outputting as style.css 
+
+*/
+
+@import "inc/scss/reset.scss";
+@import "inc/bootstrap/bootstrap.scss";
+@import "inc/scss/mixins.scss";
+@import "inc/scss/variables.scss";
+@import "inc/scss/typo.scss";
+@import "inc/scss/imagery.scss";
+@import "inc/scss/ui.scss";
+@import "inc/scss/containers.scss";
+@import "inc/scss/hamburgers.scss";
+@import "inc/scss/theme-styles.scss";
