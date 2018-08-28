@@ -13,14 +13,14 @@
 		while ( have_rows('content') ) : the_row(); ?>
 		
 			<div class="content align-<?php the_sub_field('alignment');?> <?php the_sub_field('drop_cap');?>"> 	
-				<?php the_sub_field('text');?>ddd
+				<?php the_sub_field('text');?>
 			</div>
 			
 		<?php endwhile;
 		else :
 		endif;
 		?>		
-<?php the_sub_field('button_text');?>
+
 
 	</div><!--section-->
 	    <div class='clearfix'></div>	
