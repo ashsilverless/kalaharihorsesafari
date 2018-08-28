@@ -248,6 +248,10 @@ body.home header.scrolled {
 			    left: initial;
 		    }		    
 		}
+		
+		&.center {
+			text-align: center;
+		}
 	}
   
 }
