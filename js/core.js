@@ -16,8 +16,9 @@ jQuery(document).ready(function( $ ) {
 //SMOOTH SCROOL TO ANCHOR 
 
 $(document).ready(function(){
+	
   // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  $("a").not("[data-no-scroll]").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -95,12 +96,7 @@ $(function() {
   });
 });
 
-$(function() {
-  $(".sl-card-header a").click(function() { 
-    $(this).parent().toggleClass("rotate");                 
-  });
 
-});
 
 
 //document
