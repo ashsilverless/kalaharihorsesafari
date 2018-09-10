@@ -1,4 +1,5 @@
-
+	</div></div><!--close row and container --> 
+	</div><!--section-->
 	
 <div id="<?php the_sub_field('section_id');?>" class="block <?php the_sub_field('effect');?>">
 	
@@ -54,7 +55,8 @@
 	   	
 </div><!--block-->
 
-	
+<div class="container"><!--reopen row and container -->
+<div class="row">	
 	
 	
 	
