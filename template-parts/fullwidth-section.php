@@ -45,7 +45,7 @@
 	    				<div class="next-section">		
 					
 				</div>	
-	</div></div><!--close row and container -->
+	</div></div><!--close row and container --> 
 	</div><!--section-->
 	
 
