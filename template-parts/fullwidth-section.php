@@ -1,9 +1,18 @@
 
-</div></div><!--close row and container -->
-
 <div id="<?php the_sub_field('section_id');?>" class="block <?php the_sub_field('effect');?>">
 	
+	
+	
 	<div class="sl-fullwidth image-holder" style="background-image: url(<?php the_sub_field('image'); ?>);"></div>
+	<div class="icon-wrapper">
+	
+	<div class="floating-icon">
+	<img src="<?php the_sub_field('icon');?>"/>
+	</div>
+	
+	<a href="#<?php the_sub_field('continue_reading_target');?>"><span></span></a>
+	
+	</div>
 	
 	<div class="section">
 
@@ -21,29 +30,24 @@
 					<?php endwhile;?>
 				
 									<p class="cta-read">
-					<a href="<?php the_sub_field('button_target');?>" class="cta"><?php the_sub_field('button_text');?></a>	
+					<a href="<?php the_sub_field('button_target');?>" class="cta"><?php the_sub_field('button_text');?><span></span></a>	
 				</p>
-				
-				<p class="cta-read">		
-					<a href="#<?php the_sub_field('continue_reading_target');?>" class="read"><span>or</span> continue reading</a>
-				</p>		
-			
-			
-
-			
-			
+		
 	<?php
 		else :
 		endif;
 		?>			
 </div>
+
+	    				<div class="next-section">		
+					
+				</div>	
+
 	</div><!--section-->
 	    <div class='clearfix'></div>	
+	   	
 </div><!--block-->
 
-<div class="container"><!--reopen row and container -->
-<div class="row">
-	
 	
 	
 	

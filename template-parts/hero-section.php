@@ -43,7 +43,7 @@ endif;
 ?>
 
 
-<a href="#camp" class="scroll-icon"></a>
+<a href="#horses" class="scroll-icon"></a>
 
 
 </div><!--end content wrapper-->

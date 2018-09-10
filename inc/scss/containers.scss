@@ -160,7 +160,7 @@ body.home header.scrolled {
 	}
 	
   .section {
-	padding: 20em 0;
+	padding: 60vh 0 80vh;
     max-width: 1140px;
     margin: 0 auto;  
     position: relative;
@@ -198,14 +198,14 @@ body.home header.scrolled {
 	}        
     
     .content:first-of-type {
-	    margin-top:15vh;
+	    margin-top:2.5em;
     }
        
   }
   
 	h2 {
-	    letter-spacing: 10px;
-	    font-size: 68px;
+	    letter-spacing: 2px;
+	    font-size: 28px;
 		opacity: 0;	
 		transform: translateY(100px);
 		transition: all 2s ease;  
@@ -213,14 +213,15 @@ body.home header.scrolled {
 		&.visible {
 		    opacity:1;
 		    transform: translateY(0);
+		    color: white;
 	    }
 	    
-	    &:before, &:after {
+	    &:after {
 		    content: '';
 		    position: absolute;
-		    width: 14%;
+		    width: 10%;
 		    height: 5px;
-		    background: rgba(239, 239, 239, 0.75);
+		    background: $sl-theme-primary;
 		    left: 43%;
 		    top: -20px; 
 	    }
@@ -369,6 +370,12 @@ video {
 
 .sl-divider {
 	width:100%;
+}
+
+/* ==== SCROLL SECTION ====*/
+
+.scroll-section img {
+	min-width:100%;
 }
 
 /* ==== ACCORDION ====*/

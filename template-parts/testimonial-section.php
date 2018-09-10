@@ -3,7 +3,7 @@
 </div><!--close row and container -->
 
 
-<section class="testimonial auto-height" style="background-image: url(<?php the_sub_field('video_background_image'); ?>);">
+<section id="testi" class="testimonial auto-height" style="background-image: url(<?php the_sub_field('video_background_image'); ?>);">
 
 	<div class="video-wrapper">
 		

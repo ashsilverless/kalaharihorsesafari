@@ -227,8 +227,40 @@ $(".itinerary").each(function() {
 	.addTo(controller);
 });
 
+// loop through all elements
+$(".block").each(function() {
+	var jh1 = $(this);
+	
+		// build a scene
+		var scene = new ScrollMagic.Scene({
+		triggerElement: this,
+		offset: -50,
+		triggerHook: 'onLeave'
+		})
+			.setClassToggle(this, "add-icon")
+			.addTo(controller);
+});
+
+// loop through all elements
+$(".content").each(function() {
+	var jh1 = $(this);
+	
+		// build a scene
+		var scene = new ScrollMagic.Scene({
+		triggerElement: this,
+		offset: -350,
+		triggerHook: 'onLeave'
+		})
+			.setClassToggle(this.closest('.block'), "no-icon")
+			.addTo(controller);
+});
+
 
 });
+
+
+
+
 
 });//Don't remove
 
