@@ -1,5 +1,4 @@
-<div class="container"><!--reopen row and container -->
-<div class="row">
+
 	
 <div id="<?php the_sub_field('section_id');?>" class="block <?php the_sub_field('effect');?>">
 	
@@ -15,7 +14,9 @@
 	<a href="#<?php the_sub_field('continue_reading_target');?>"><span></span></a>
 	
 	</div>
-	
+
+<div class="container"><!--reopen row and container -->
+<div class="row">
 	<div class="section">
 
 		<h2 class="<?php the_sub_field('alignment');?> fade-heading"><?php the_sub_field('heading');?></h2>	
@@ -46,11 +47,13 @@
 				</div>	
 
 	</div><!--section-->
+	
+	</div></div><!--close row and container -->
+	
 	    <div class='clearfix'></div>	
 	   	
 </div><!--block-->
 
-</div></div><!--close row and container -->
 	
 	
 	
