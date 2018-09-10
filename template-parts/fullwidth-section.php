@@ -15,10 +15,10 @@
 	
 	</div>
 
+
+	<div class="section">
 <div class="container"><!--reopen row and container -->
 <div class="row">
-	<div class="section">
-
 		<h2 class="<?php the_sub_field('alignment');?> fade-heading"><?php the_sub_field('heading');?></h2>	
 			
 		
@@ -45,10 +45,10 @@
 	    				<div class="next-section">		
 					
 				</div>	
-
+	</div></div><!--close row and container -->
 	</div><!--section-->
 	
-	</div></div><!--close row and container -->
+
 	
 	    <div class='clearfix'></div>	
 	   	
