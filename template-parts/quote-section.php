@@ -10,7 +10,7 @@
 	
 		<p><?php the_sub_field('quote');?></p>
 		
-		<p><?php the_sub_field('quoted_by');?></p>
+		<p><?php the_sub_field('quote_by');?></p>
 	
 	</div><!--end content wrapper-->
 

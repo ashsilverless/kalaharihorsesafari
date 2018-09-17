@@ -453,7 +453,7 @@ body .fancybox-button--zoom {
 		    content: '\201C';
 		    position: absolute;
 		    font-size: 2em;
-		    left: 0;
+		    left: -100px;
 		    top: 0;
 		    font-family: Georgia, "Times New Roman", Times, serif;  
 	    }
@@ -462,7 +462,7 @@ body .fancybox-button--zoom {
 		    top:initial;
 			left:initial;
 			content: '\201D';   
-			right: 0;
+			right: -100px;
 			bottom: 0;
 	    }
 	    
@@ -702,13 +702,12 @@ footer {
 		
 	}
 	
-	
-	
-	
 }
 
 
-
+.quote {
+	min-height: 100vh;
+}
 
 
 @keyframes pulse {
