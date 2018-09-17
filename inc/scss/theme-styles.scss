@@ -675,8 +675,29 @@ footer {
 		background: transparent;
 		margin-bottom: 50px;
 
+		.visibleNearbySimple .rsSlide img {
+	    	opacity: .3;
+	    }
+	
+		.rsArrowIcn {
+		    background: transparent;
+		    
+		    &:after {
+			    content:'';
+			    position: absolute;
+				border: solid white;
+				border-width: 0 2px 2px 0;
+				display: inline-block;
+				transform:rotate(45deg); 
+				right: -30px; 
+				width: 10px;
+				height: 10px;
+		    }
+		}
 	
 	}
+	
+	
 	
 	
 }
