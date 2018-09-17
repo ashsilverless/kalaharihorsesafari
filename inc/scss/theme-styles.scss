@@ -683,18 +683,23 @@ footer {
 		    background: transparent;
 		    
 		    &:after {
-			    content:'';
+			    content: '';
 			    position: absolute;
-				border: solid white;
-				border-width: 0 2px 2px 0;
-				display: inline-block;
-				transform:rotate(45deg); 
-				right: -30px; 
-				width: 10px;
-				height: 10px;
+			    border: solid white;
+			    border-width: 0 2px 2px 0;
+			    display: inline-block;
+			    transform: rotate(-45deg);
+			    width: 20px;
+			    height: 20px;
+			    left: 0;
 		    }
+		    
 		}
 	
+		.rsArrowLeft .rsArrowIcn:after {
+			transform: rotate(-225deg);	
+		}
+		
 	}
 	
 	
