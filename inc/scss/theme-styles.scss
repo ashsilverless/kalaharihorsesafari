@@ -671,7 +671,7 @@ footer {
 .sl-slider {
 	width:100%;
 	
-	.rsUni {
+	.rsUni, .rsUni .rsOverflow, .rsUni .rsSlide, .rsUni .rsVideoFrameHolder, .rsUni .rsThumbs {
 		background: transparent;
 		margin-bottom: 50px;
 
