@@ -41,14 +41,14 @@
 			'container_class' => 'custom-menu-class' ) ); 
 			?>  
 			
-			<?php $background = get_field("nav_cta-img", "khs_header");?>
+			<!--<?php $background = get_field("nav_cta-img", "khs_header");?>
 				
 			<div class="cta-wrapper" style="background-image:url('<?php echo $background ?>')">
 				<a href="#">
 					<p><?php the_field("nav_cta_text_1", "khs_header"); ?></p>
 					<p><?php the_field("nav_cta_text_2", "khs_header"); ?></p>
 				</a>
-			</div>
+			</div>-->
 		</div>
 	</nav>
 
@@ -77,7 +77,7 @@
 			</div>
 			
 			<div class="col-sm-3 book-cta">
-				<a href="#colophon">
+				<a href="/faqs">
 					<?php the_field("main_call_to_action_text", "khs_header"); ?>   
 				</a>
 			</div>
