@@ -29,7 +29,7 @@
 			</div>
 			
 			<div class="col-sm-5">
-			
+				<p><?php the_field('text_above_form', 'khs_footer'); ?></p>
 				<?php echo do_shortcode('[contact-form-7 id="478" title="Footer Contact Form"]');?>
 			
 			</div>
