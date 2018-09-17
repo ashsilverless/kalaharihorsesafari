@@ -38,7 +38,11 @@ if( have_rows('page_content') ):
 		elseif( get_row_layout() == 'testimonial_section' ): 
 
 			get_template_part( 'template-parts/testimonial', 'section' );		
-		
+
+		elseif( get_row_layout() == 'testimonial_section' ): 
+
+			get_template_part( 'template-parts/quote', 'section' );	
+					
 		endif;
 
 endwhile;
