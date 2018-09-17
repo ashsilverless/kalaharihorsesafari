@@ -54,12 +54,20 @@ endif;
 
 <div class="container"><!--open row and container -->
 <div class="row">
+
+<?php if( get_field('slider_id') ): ?>
+
 	<div class="sl-slider">
-		
+
+
 	<?php echo do_shortcode('[new_royalslider id=" '.get_field('slider_id').' "]');?>
 	
 	<!--<?php get_template_part( 'template-parts/masonry', 'gallery' );?>-->
 	</div>
+
+<?php endif; ?>	
+	
+	
 </div><!--row-->
 
 
