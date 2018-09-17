@@ -668,34 +668,6 @@ footer {
 	}
 }
 
-.sl-slider {
-	
-	.rsUni, .rsUni .rsOverflow, .rsUni .rsSlide, .rsUni .rsVideoFrameHolder, .rsUni .rsThumbs {
-		background: transparent;
-		margin-bottom: 50px;
-	}
-	
-	.rsUni .rsArrowIcn {
-    background: none;
-	
-	    &:after {
-		    content: '';
-		    position: absolute;
-		    border: solid white;
-		    border-width: 0 2px 2px 0;
-		    display: inline-block;
-		}
-	
-	}
-	
-	
-	
-	
-}
-
-
-
-
 
 @keyframes pulse {
 	0% {
