@@ -54,8 +54,8 @@ endif;
 
 <div class="container"><!--open row and container -->
 <div class="row">
-	
-	<?php get_template_part( 'template-parts/masonry', 'gallery' );?>
+	<?php echo do_shortcode('[new_royalslider id="1"]');?>
+	<!--<?php get_template_part( 'template-parts/masonry', 'gallery' );?>-->
 	
 </div><!--row-->
 
